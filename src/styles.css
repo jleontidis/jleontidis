@@ -1,1 +1,137 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'NexaBold';
+    src:url('assets/fonts/NexaBold.ttf.woff') format('woff'),
+        url('assets/fonts/NexaBold.ttf.svg#NexaBold') format('svg'),
+        url('assets/fonts/NexaBold.ttf.eot'),
+        url('assets/fonts/NexaBold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'NexaLight';
+    background-color: #dad8d4;
+    font-size: 16px;
+}
+
+nav.navigation {
+    background-color: #939393;
+}
+
+.navigation .nav-item:hover {
+    background-color: #1E91D6;
+}
+
+.navigation .nav-link {
+    padding: 3rem;
+    border-left: 1px solid #fbf5f3;
+    border-right: 1px solid #fbf5f3;
+    text-align: center;
+    color: #fbf5f3; 
+}
+
+.navigation .nav-item:hover a {
+    color: #fbf5f3;
+}
+
+.navigation .nav-item.active {
+    background-color: #1E91D6;
+    position: relative;
+}
+
+.navigation .nav-item.active::after {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    content: '';
+    border-top: 20px solid #1E91D6;
+    bottom: -18px;
+    left: 38%;
+}
+
+.navigation .navigation-footer {
+    height: 50px;
+    background-color: #fbf5f3;
+}
+
+.navigation .nav {
+    width: 100%;
+}
+.breadcrumb h1 {
+    font-family: 'NexaBold';
+    color: #fbf5f3;
+    text-align: center;
+    padding: 20px;
+}
+
+.breadcrumb-text {
+    color: #1E91D6;
+}
+
+.breadcrumb p {
+    text-align: center;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.main-content-container {
+    background-color: #1E91D6;
+    position: relative;
+    margin-top: 50px;
+}
+
+.main-content-container img{
+    position: relative;
+    top: -30px;
+}    
+.personal-info td {
+    border : 0;
+    padding: 0;
+}
+.personal-info tr td {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.personal-info-tabs {
+    position: relative;
+    top: -42px;
+}
+
+.footer-bottom {
+
+    background-color: #1e91d6;
+}
+.social-icons {
+    padding: 50px 0;
+}
+.social-icons li a {
+    color: #fff;
+    font-size: 20px;
+   
+}
+
+.blockquote {
+    padding: 60px;
+}
+
+.blockquote p {
+    text-align: center;
+}
+
+.card {
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    min-width: 250px;
+}
+
+.projects {
+    background-color: #1E91D6;
+    padding: 20px;
+}
